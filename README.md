@@ -23,8 +23,7 @@ Any questions or issues can be directed to CLP. Some scripts require additional
 tools to be installed, which will be indicated where possible.
 
 Note that all scripts noted here can be called without arguments for more detail on options and usage.
-Scripts included with Additional file 2 but not described here are only provided as helper
-scripts and are not separately described.
+Any scripts not described here are helper scripts required by one or more of these primary scripts, but are not separately described.
 
 ------------------------
 assign_to_allele.py
@@ -237,7 +236,7 @@ predict_logit_train_test.do
 v.1.0, Stata script, requires Stata version 14
 
 This script runs the logistic regression analysis discussed in the methods section "Logistic regression model fitting",
-and requires the input file Additional file 3: full_dataset.txt to be in the same directory
+and requires the input file Additional file 2: full_dataset.txt to be in the same directory
 as this script (or, change line 44 to the correct location of this file). Results will be saved
 to your current directory, and named "regression_results.dta" and "regression_results.txt"
 (a Stata-formated data file and a human-readable tab-del file, respectively). WARNING! this 
@@ -254,8 +253,8 @@ v.1.0, Stata script, requires Stata version 14
 These three scripts all run very similar analyses - the process resembles predict_logit_train_test.do
 except only seven models, representing all combinations of the three methylation predictors, are tested, and the
 dependent var is different (variability across strains instead of dynamic CGs). *_mini.do runs this
-analysis on our thaliana data and requires Additional file 3: full_dataset.txt. *_maize.do runs this
-analysis on data from maize (Li et al. 2015) and requires Additional file 3: full_maize_B73_data.txt.
+analysis on our thaliana data and requires Additional file 2: full_dataset.txt. *_maize.do runs this
+analysis on data from maize (Li et al. 2015) and requires Additional file 2: full_maize_B73_data.txt.
 *_distachyon.do runs this analysis on B. distachyon data (Eichten et al. 2016) and requires 
-Additional file 3: full_distachyon_Bd1_1_data.txt.
+Additional file 2: full_distachyon_Bd1_1_data.txt.
 	
